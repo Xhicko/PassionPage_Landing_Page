@@ -342,6 +342,25 @@ margin: 100px 0 ;
 
 }
 
+.About{
+    padding: 0 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.About_Top h3{
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.About_Top p{
+    font-family: 'Heebo', sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+}
+
 .Footer{
     background-color: #000;
     width: 100%;
@@ -482,6 +501,20 @@ margin: 100px 0 ;
     .Bottom p{
         font-size: .9rem;
     }
+
+    .About{
+        padding: 0 10px;
+        width: 100%;
+    }
+    
+    .About_Top h3{
+        font-size: 1rem;
+    }
+    
+    .About_Top p{
+        font-size: .9rem;
+    }
+    
     
   }
   
