@@ -11,12 +11,18 @@ font-family: 'Heebo', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Josefin Slab', serif;
 */
+html{
+    scroll-behavior: smooth;
+    transition: all  ease-in-out;
+}
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensure the body covers at least the viewport height */
 }
+
+
 
 body::-webkit-scrollbar {
   display: none;
@@ -413,13 +419,44 @@ margin: 100px 0 ;
     text-decoration: none;
   }
   
-  
   .Footer_Socials svg{
     width:20px ;
     color: #fff;
   }
 
 
+  
+.Back_to_top{
+    position: fixed;
+    bottom: 35px;
+    right: 5px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.Back_to_top  svg{
+   width: 35px;
+   font-size: 20px;
+   color: #fff;
+   padding: 10px;
+   background-color: #000;
+   border-radius: 50%;
+   animation: moveUp 2000ms infinite;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
   
 @media screen and (max-width:1250px){
 

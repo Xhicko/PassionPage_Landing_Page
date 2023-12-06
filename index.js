@@ -23,3 +23,28 @@ document.addEventListener('DOMContentLoaded', function(){
         })
 })
 
+
+const backToTopButton = document.getElementById('Back_To_Top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY >= 4000) { // Adjust this value as needed
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
+// Scroll to the top when the button is clicked
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+window.onload = function() {
+  var inputFields = document.querySelectorAll('.Contact_Form input');
+  inputFields.forEach(function(input) {
+      input.blur(); // Remove focus from all input fields
+  });
+};
