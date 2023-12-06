@@ -320,6 +320,12 @@ margin: 100px 0 ;
     width: 80%;
 }
 
+.Content_Middle img{
+  cursor: grabbing;
+}
+
+
+
 .Bottom{
     margin: 20px 0;
 }
