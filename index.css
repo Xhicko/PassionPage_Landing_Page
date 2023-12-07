@@ -176,7 +176,7 @@ nav{
 }
 
 .CTA_Content{
-    background-image: url('/LandingPage_Image.jpg');
+    background-image: url('LandingPage_Image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
